@@ -1,0 +1,8 @@
+<section [ngClass]="theme==='dark'?'dark-theme':'light-theme'">
+<img [src]="movieDetails.posterurl" [alt]="movieDetails.title" height="250" width="200" />
+<h4 [ngStyle]="{color:fontColor}">{{movieDetails.title}}</h4>
+<p>StoryLine: {{movieDetails.storyline}}</p>
+<p>Actors: {{movieDetails.actors}}</p>
+<p>Rent Price:{{99|currency:'INR'}}</p>
+<p>Release Date:{{movieDetails.releaseDate|date:'EEEE LLL,dd yyyy'}}</p>
+</section>

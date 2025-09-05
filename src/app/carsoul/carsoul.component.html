@@ -1,0 +1,10 @@
+<section class="main-section">
+    <button (click)="previous()">&lt;</button>
+    <section class="title-section">
+        <p>{{suggestions[index].title}}</p>
+        <p style="width:200px;">{{suggestions[index].description}}</p>
+    </section>
+    <img [src]="suggestions[index].Image" [alt]="suggestions[index].title"
+    height="300" width="500"/>
+    <button (click)="next()">&gt;</button>
+</section>

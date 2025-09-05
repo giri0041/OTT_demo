@@ -1,0 +1,5 @@
+<h2 class="main.title">Trending Movies</h2>
+<section *ngFor="let movie of movies">
+    <img [src]="movie.Poster" alt="movie.title" height="250" width="200"/>
+    <p>Released Date :{{movie.Released}}</p>
+</section>

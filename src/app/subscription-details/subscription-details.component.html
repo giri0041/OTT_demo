@@ -1,0 +1,16 @@
+<section>
+<h2>Select your subscription:</h2>
+<select [(ngModel)]="selectSubscription">
+    <option>Super</option>
+    <option>Premium</option>
+    <option>VIP</option>
+</select>
+<!--{{selectSubscription}}-->
+<section [ngSwitch]="selectSubscription">
+    <p *ngSwitchCase="'Super'">Price : 299/Month with adversitement</p>
+    <p *ngSwitchCase="'Premium'">Price : 999/Year with adversitement</p>
+    <p *ngSwitchCase="'VIP'">Price : 1299/Year without adversitement</p>
+    <p *ngSwitchDefault>Choose the plan to see details</p>
+
+</section>
+</section>

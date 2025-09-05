@@ -1,0 +1,23 @@
+<h2>REGISTER </h2>
+ <!--template driven form-->
+    <form #regForm="ngForm" (ngSubmit)="handleSubmit(regForm.value)">
+
+        <input class="input" type="text" name="name"  placeholder="Name" ngModel required />
+        <br/><br/>
+        <input class="input" type="email" name="email" placeholder="email" ngModel required />
+        <br/><br/>
+        <input class="btn" type="submit" value="Register" [disabled]="regForm.invalid" />
+        <br/><br/>
+    </form>
+    <hr/>
+    <div>
+      <form [formGroup]="registerForm"> <!--reactive form-->
+        <!--<input class="input" type="text" name="name"  placeholder="Name" ngModel required />
+        <br/><br/>
+        {{registerForm.value.name}}
+        <input class="input" type="email" name="email" placeholder="email" ngModel required />
+        <br/><br/>
+        <input class="btn" type="submit" value="Register" [disabled]="registerForm.invalid" />
+        <br/><br/>-->
+    </form>
+</div>
